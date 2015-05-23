@@ -11,7 +11,15 @@ namespace Game
         //Може да се тества функциалността на класовете тук.
         static void Main()
         {
-
+            //char[,] map = new char[3,3];
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        map[i,j] = 'c';
+            //    }
+            //}
+            //Drawer.PrintField(map);
         }
     }
 

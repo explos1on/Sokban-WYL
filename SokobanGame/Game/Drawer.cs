@@ -8,24 +8,20 @@ using System.Threading.Tasks;
 namespace Game
 {
     //drawing in the console.
-    class Drawer
+    public class Drawer
     {
-        public static void practice()
+        public static void PrintField(char[,] field)
         {
-            Console.WriteLine("aaaa");
+            StringBuilder fillTheField = new StringBuilder();
+            for (int i = 0; i < field.GetLength(0); i++)
+            {
+                for (int j = 0; j < field.GetLength(1); j++)
+                {
+                    fillTheField.Append(field[i, j]);
+                }
+                fillTheField.AppendLine();
+            }
+            Console.WriteLine(fillTheField);
         }
-
-
-        //public static void PrintMatrix(int[,] matrix) // this is Method who print a matrix.In our case the map of the game.
-        //{
-        //    for (int row = 0; row < matrix.GetLength(0); row++)
-        //    {
-        //        for (int col = 0; col < matrix.GetLength(1); col++)
-        //        {
-        //            Console.Write(matrix[row, col]);
-        //        }
-        //        Console.WriteLine();
-        //    }
-        //}
     }
 }
