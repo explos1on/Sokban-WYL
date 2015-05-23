@@ -11,6 +11,11 @@ namespace Game
         //Може да се тества функциалността на класовете тук.
         static void Main()
         {
+            CustomEventHandler.OnKeyPressed += HandleKeyPressed;
+            while (true)
+            {
+                CustomEventHandler.ProcessInput();
+            }
             //char[,] map = new char[3,3];
             //for (int i = 0; i < 3; i++)
             //{
@@ -20,6 +25,10 @@ namespace Game
             //    }
             //}
             //Drawer.PrintField(map);
+        }
+        public static void HandleKeyPressed(object o, CustomEventArgs ea)
+        {
+            Console.WriteLine(ea.KeyPressed);
         }
     }
 
@@ -34,5 +43,5 @@ namespace Game
     //            Console.WriteLine();
     //        }
     //    }
-    
+
 }
