@@ -6,29 +6,13 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Game
+    public class Game
     {
         //Може да се тества функциалността на класовете тук.
         static void Main()
         {
-            CustomEventHandler.OnKeyPressed += HandleKeyPressed;
-            while (true)
-            {
-                CustomEventHandler.ProcessInput();
-            }
-            //char[,] map = new char[3,3];
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    for (int j = 0; j < 3; j++)
-            //    {
-            //        map[i,j] = 'c';
-            //    }
-            //}
-            //Drawer.PrintField(map);
-        }
-        public static void HandleKeyPressed(object o, CustomEventArgs ea)
-        {
-            Console.WriteLine(ea.KeyPressed);
+            var engine = new GameEngine('x', 'o', '#', 'O');
+            engine.Start();
         }
     }
 

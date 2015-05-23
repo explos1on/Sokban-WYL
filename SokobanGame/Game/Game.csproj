@@ -41,11 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollisionsDetector.cs" />
     <Compile Include="CollusionDetection.cs" />
+    <Compile Include="Direction.cs" />
     <Compile Include="Drawer.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="CustomEventHandler.cs" />
     <Compile Include="GameEngine.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Hero.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

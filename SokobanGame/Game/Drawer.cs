@@ -23,5 +23,10 @@ namespace Game
             }
             Console.WriteLine(fillTheField);
         }
+
+        public static void Clear()
+        {
+            Console.Clear();
+        }
     }
 }

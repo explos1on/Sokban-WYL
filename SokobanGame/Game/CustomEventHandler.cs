@@ -12,7 +12,6 @@ namespace Game
     }
 
     //Обработва и приема input и да го предава и на engine.
-
     public class CustomEventHandler
     {
 
