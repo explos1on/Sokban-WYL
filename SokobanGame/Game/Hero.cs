@@ -9,7 +9,7 @@ namespace Game
     public class Hero : GameObject
     {
         public Hero(char body)
-            : base(new Position(1, 1), body)
+            : base(new Position(1, 1), body, true)
         {
 
         }

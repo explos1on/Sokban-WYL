@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    //drawing in the console.
+    /// <summary>
+    /// Class to deal with console
+    /// </summary>
     public class Drawer
     {
+        /// <summary>
+        /// Draw on console passed field.
+        /// </summary>
+        /// <param name="field">The preset field to be drawn.</param>
         public static void PrintField(char[,] field)
         {
             StringBuilder fillTheField = new StringBuilder();

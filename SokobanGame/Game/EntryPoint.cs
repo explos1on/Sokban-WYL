@@ -8,7 +8,9 @@ namespace Game
 {
     public class Game
     {
-        //Може да се тества функциалността на класовете тук.
+        /// <summary>
+        /// You can test the functionallity of the classes here. Entry point for the console application.
+        /// </summary>
         static void Main()
         {
             var engine = new GameEngine('x', 'o', '#', 'O');
